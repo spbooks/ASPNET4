@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/" title="Root" description="Root">
+    <siteMapNode url="~/Default.aspx" title="Home"
+        description="Dorknozzle Home" />
+    <siteMapNode url="~/HelpDesk.aspx" title="Help Desk"
+        description="Dorknozzle Help Desk" />
+    <siteMapNode url="~/EmployeeDirectory.aspx"
+        title="Employee Directory"
+        description="Dorknozzle Employee Directory" />
+    <siteMapNode url="~/AddressBook.aspx" title="Address Book"
+        description="Dorknozzle Address Book" />
+    <siteMapNode url="~/Departments.aspx" title="Departments"
+        description="Dorknozzle Departments" />
+    <siteMapNode url="~/AdminTools.aspx" title="Admin Tools"
+        description="Admin Tools" />
+    <siteMapNode url="~/AdminNewsletter.aspx"
+        title="Admin Newsletter"
+        description="Dorknozzle Admin Newsletter" />
+  </siteMapNode>
+</siteMap>

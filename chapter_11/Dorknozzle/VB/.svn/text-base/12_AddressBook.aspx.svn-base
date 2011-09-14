@@ -1,0 +1,32 @@
+﻿<%@ Page Language="VB" MasterPageFile="~/Dorknozzle.master" AutoEventWireup="false" CodeFile="AddressBook.aspx.vb" Inherits="AddressBook" title="Dorknozzle Address Book" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+  <h1>Address Book</h1>
+  <asp:GridView id="grid" runat="server" AutoGenerateColumns="False">
+    <Columns>
+      <asp:BoundField DataField="Name" HeaderText="Name" />
+      <asp:BoundField DataField="City" HeaderText="City" />
+      <asp:BoundField DataField="MobilePhone" HeaderText="Mobile Phone" />
+      <asp:ButtonField CommandName="Select" Text="Select" />
+    </Columns>
+  </asp:GridView>
+  <br />
+  <asp:DetailsView id="employeeDetails" runat="server" AutoGenerateRows="False">
+    <Fields>
+      <asp:BoundField DataField="Address" HeaderText="Address" />
+      <asp:BoundField DataField="City" HeaderText="City" />
+      <asp:BoundField DataField="State" HeaderText="State" />
+      <asp:BoundField DataField="Zip" HeaderText="Zip" />
+      <asp:BoundField DataField="HomePhone" 
+          HeaderText="Home Phone" />
+      <asp:BoundField DataField="Extension" 
+          HeaderText="Extension" />
+    </Fields>
+    <HeaderTemplate>
+      <%#Eval("Name")%>
+    </HeaderTemplate>
+  </asp:DetailsView>
+</asp:Content>
+

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>workatdorknozzle.gif</ImageUrl>
+    <NavigateUrl>http://www.example.com</NavigateUrl>
+    <TargetUrl>_blank</TargetUrl>
+    <AlternateText>Work at Dorknozzle!</AlternateText>
+    <Keyword>HR Sites</Keyword>
+    <Impressions>2</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>getthenewsletter.gif</ImageUrl>
+    <NavigateUrl>http://www.example.com</NavigateUrl>
+    <TargetUrl>_blank</TargetUrl>
+    <AlternateText>Get the Nozzle Newsletter!</AlternateText>
+    <Keyword>Marketing Sites</Keyword>
+    <Impressions>1</Impressions>
+  </Ad>
+</Advertisements>

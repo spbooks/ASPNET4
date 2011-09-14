@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Dorknozzle.master.cs" Inherits="Dorknozzle" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+  </head>
+  <body>
+    <form id="form1" runat="server">
+      <!-- Header -->
+      <div class="Header">
+        <asp:ScriptManager ID="DorknozzleScriptManager" runat="server">
+        </asp:ScriptManager>
+        <asp:Image id="Image1" runat="server"
+            ImageUrl="~/Images/header.gif" Width="450" Height="174"
+            AlternateText="The Official Dorknozzle Company
+            Intranet" />
+      </div>
+      <!-- Menu -->
+      <div class="Menu">
+        <asp:LoginView ID="loginView" runat="server">
+          <LoggedInTemplate>
+            <asp:LoginName ID="loginName" runat="server"
+                FormatString="Hello, {0}!" />
+            (<asp:LoginStatus ID="loginStatus" runat="server" />)
+            <asp:SiteMapDataSource id="dorknozzleSiteMap" runat="server"
+                ShowStartingNode="false" />
+            <asp:Menu id="dorknozzleMenu" runat="server"
+                DataSourceID="dorknozzleSiteMap">
+              <StaticItemTemplate>
+                <img src="Images/book_closed.gif" alt="+"
+                    width="16" height="16" style="border-width: 0;" />
+                <%# Eval("Text") %>
+              </StaticItemTemplate>
+            </asp:Menu>
+          </LoggedInTemplate>
+          <AnonymousTemplate>
+            <asp:LoginStatus ID="loginStatus" runat="server" />
+          </AnonymousTemplate>
+        </asp:LoginView>
+      </div>
+      <!-- Content -->
+      <div class="Content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1"
+            runat="server" />
+      </div>
+    </form>
+  </body>
+</html>

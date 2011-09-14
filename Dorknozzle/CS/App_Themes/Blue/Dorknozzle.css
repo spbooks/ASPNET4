@@ -1,0 +1,69 @@
+﻿body {
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+h1 {
+  font-size: 25px;
+}
+a:link, a:visited {  
+  text-decoration: none;
+  color: Blue;
+}
+a:hover {
+  color: Red;
+}
+.Header {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  width: 800px;
+  background-image: url(../../Images/header_bg.gif);
+  background-repeat: repeat-x;
+}
+.Menu {
+  top: 180px;
+  left: 15px;
+  width: 195px;
+  position: absolute;
+}
+.Content {
+  top: 160px;
+  left: 170px;
+  position: absolute;
+  width: 600px
+}
+.widelabel {
+  display:-moz-inline-block;
+  display:inline-block;
+  width: 100px;
+}
+.GridMain {
+  border-right: gainsboro thin solid;
+  border-top: gainsboro thin solid;
+  border-left: gainsboro thin solid;
+  border-bottom: gainsboro thin solid;
+  background-color: #333333;
+  width: 400px;
+}
+.GridRow {
+  background-color: #FFFAFA;
+}
+.GridSelectedRow {
+  background-color: #E6E6FA;
+}      
+.GridHeader {
+  background-color: #ADD8E6;
+  font-weight: bold;
+  text-align: left;
+}
+.UpdateProgress {
+  background-color: Black;
+  color: White;
+  font-weight: bold;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.fieldError {
+  background-color: pink;
+  color: White;
+}
